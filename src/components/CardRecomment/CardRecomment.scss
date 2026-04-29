@@ -1,0 +1,49 @@
+.card-recomment{
+    width: 413px;
+    height: 453px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 16px;
+    background: rgba(248, 249, 250, 1);
+}
+
+.recomment-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & p{
+        font-size: 13px;
+        font-family: var(--Readex-Pro-font);
+        font-weight: 400;
+        color: black;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    & h3{
+        font-size: 28px;
+        font-family: var(--Readex-Pro-font);
+        font-weight: 400;
+        color: black;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+
+.recomment-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img{
+        width: 259px;
+        height: 250px;
+        object-fit: contain;
+    }
+}

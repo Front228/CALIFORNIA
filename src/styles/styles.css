@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Readex+Pro:wght@160..700&display=swap');
+
+
+
+
+
+:root{
+    --Inter-font: 'Inter', sans-serif;
+    --Readex-Pro-font: 'Readex Pro', sans-serif;
+
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}

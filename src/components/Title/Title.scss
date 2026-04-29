@@ -1,0 +1,27 @@
+.block-title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & h2{
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: var(--Readex-Pro-font);
+        color: var(--color-black);
+        text-align: center;
+        
+        &::selection{color: darkmagenta;}
+    }
+
+    & p{
+        width: 630px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: var(--Readex-Pro-font);
+        color: var(--color-black);
+        text-align: center;
+    }
+}

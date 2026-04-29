@@ -1,0 +1,90 @@
+.Footer{
+    width: 100%;
+    height: 378px;  
+    background-color: rgba(248, 249, 250, 1);
+    border-top: 1px solid rgba(220, 229, 226, 1);
+    position: relative;
+}
+.footer-block{
+    width: 100%;
+    height: 80%;
+    padding: 45px 73px;
+    display: flex;
+
+}
+.FooterLogo{
+    & a img{
+        padding-bottom: 18px;
+        padding-top: 10px;
+    }
+
+    & p{
+        font-size: 1rem;
+        font-family: var(--Inter-font);
+        font-weight: 400;
+        color: #000;
+        line-height: 1.5;
+    }
+}
+.footer-menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
+    &-list{
+        list-style: none;
+        text-align: start;
+    }
+
+    &-title{
+        font-size: 22px;
+        font-family: var(--Readex-Pro-font);
+        font-weight: 400;
+        color: #000;
+        line-height: 1.5;
+        padding-bottom: 12px;
+    }
+
+    &-item{
+        font-size: 17px;
+        font-family: var(--Inter-font);
+        font-weight: 400;
+        color: #000;
+        line-height: 1.5;
+        padding: 7px 0;
+    }
+}
+
+.line{
+    max-width: 1350px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(220, 229, 226, 1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name-tag{
+    width: 100%;
+    height: 20%;
+    padding: 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    & .y3ktv{
+        font-size: 18px;
+        font-family: var(--Readex-Pro-font);
+        font-weight: 400;
+        color: #000;
+    }
+    & .d-4fmn5v{
+        font-size: 18px;
+        font-family: var(--Inter-font);
+        font-weight: 400;
+        color: #000;
+        line-height: 1.5;
+    }
+}
