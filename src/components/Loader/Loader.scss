@@ -1,0 +1,78 @@
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999; // Поверх всего
+    display: flex;
+    overflow: hidden;
+    pointer-events: none; // Чтобы не кликать случайно, пока анимация идет
+
+    // Скрываем контент после завершения анимации
+    &.active {
+        .loader-panel {
+            transform: translateY(-100%); // Улетают вверх
+        }
+        
+        .loader-content {
+            opacity: 0;
+            transform: translateY(-100%); // Текст тоже уходит чуть выше
+        }
+    }
+
+    // Панели (Шторки)
+    .loader-panel {
+        width: 33.3333%;
+        height: 100%;
+        background-color: #ffffff; // Белый экран
+        transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1); // Плавная кривая
+    }
+
+    // Задержки для каждой панели, чтобы они поднимались "лесенкой"
+    .panel-left { transition-delay: 0s; }
+    .panel-center { transition-delay: 0.15s; }
+    .panel-right { transition-delay: 0.3s; }
+
+    // Контент по центру
+    .loader-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 10000;
+        transition: all 0.5s ease;
+        width: 200px;
+
+        .loader-text {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #000;
+            margin-bottom: 20px;
+            font-family: var(--Inter-font);
+            letter-spacing: 2px;
+        }
+
+        .loader-bar-container {
+            width: 100%;
+            height: 4px;
+            background-color: #e0e0e0;
+            border-radius: 2px;
+            overflow: hidden;
+
+            .loader-bar {
+                height: 100%;
+                background-color: #000;
+                width: 0%;
+                // Анимация заполнения ровно за 3 секунды
+                animation: fillBar 2s linear forwards; 
+            }
+        }
+    }
+}
+
+@keyframes fillBar {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}

@@ -6,6 +6,7 @@ import Recommendations from "./components/Recommendations"
 import SectionIdeas from "./components/SectionIdeas"
 import Form from "./components/Form"
 import Footer from "./templete/Footer"
+import Loader from "./components/Loader"
 import "./styles/styles.css"
 
 
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    <Loader />
       <Header/>
       <Slider />
       <Categories />

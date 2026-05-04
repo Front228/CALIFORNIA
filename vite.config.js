@@ -3,12 +3,12 @@ import react from '@vitejs/plugin-react'
 import { fileURLToPath, URL } from 'node:url'
 
 // https://vite.dev/config/
-export default defineConfig(( { mode } ) => {  // ← Правильный синтаксис: деструктуризация
+export default defineConfig(( { mode } ) => {  
 
   const isProd = mode === 'production'
 
   return {
-    base: isProd ? '/CALIFORNIA/' : '/',  // ✅ Правильно для GitHub Pages
+    base: isProd ? '/california/' : '/',  
     plugins: [react()],
     
     resolve: {  // ← Исправлено: было repolve
